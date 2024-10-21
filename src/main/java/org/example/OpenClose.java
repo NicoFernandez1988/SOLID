@@ -4,8 +4,12 @@ import java.util.Objects;
 
 public class OpenClose {
 
-    // La clase calculadoraDescuento rompe el principio de abierto cerrado, ya que se encuentra abierto para su
-    // modificacion.
+    /**
+      El principio de abierto cerrado, indica que las clases deben estar abiertas para su extension pero cerradas para
+      su modificacion.
+      La clase calculadoraDescuento rompe el principio de abierto cerrado, ya que se encuentra abierto para su
+      modificacion.
+     */
 
     public class calculadoraDescuentoErronea{
 
@@ -23,8 +27,10 @@ public class OpenClose {
 
     }
 
-    // Se crea una interfaz descuento para no dejar la clase abierta para su modificacion, sino que queda abierta
-    // solo para su extension;
+    /**
+      Se crea una interfaz descuento para no dejar la clase abierta para su modificacion, sino que queda abierta
+      solo para su extension;
+     */
 
     public interface Descuento{
         double aplicarDescuento(double precio);

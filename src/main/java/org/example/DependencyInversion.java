@@ -2,8 +2,11 @@ package org.example;
 
 public class DependencyInversion {
 
-    // Este principio Indica que los modulos de alto nivel no deben depender de los modulos de bajo nivel, sino que
-    // ambos deben depender de abstracciones.
+    /**
+     Este principio Indica que los modulos de alto nivel no deben depender de los modulos de bajo nivel, sino que
+     ambos deben depender de abstracciones.
+     */
+
 
     public interface INaveEspacial{
 
@@ -16,10 +19,11 @@ public class DependencyInversion {
 
     public static class SistemaControlDeNaves{
 
-
-        //todas las naves espaciales que implementan la interfaz INaveEspacial pueden ser operadas por el sistema
-        //de control de naves.
-        //se inyecta la dependencia de INaveEspacial
+        /**
+         Todas las naves espaciales que implementan la interfaz INaveEspacial pueden ser operadas por el sistema
+         de control de naves.
+         Se inyecta la dependencia de INaveEspacial
+         */
 
         private final INaveEspacial iNaveEspacial;
 

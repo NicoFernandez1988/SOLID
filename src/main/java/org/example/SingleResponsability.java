@@ -2,7 +2,10 @@ package org.example;
 
 public class SingleResponsability {
 
-    // La clase calculadora rompe el principio de responsabilidad unica, ya que no hace una cosa.
+    /**
+      El principio de responsabilidad unica, como su nombre lo indica, deber asegurar que cada clase solo haga una cosa.
+      En este caso, la clase calculadora rompe este principio.
+     */
 
     public class calculadora{
 
@@ -18,7 +21,7 @@ public class SingleResponsability {
 
     }
 
-    //Aplicamos el principio de responsabilidad unica, para que cada clase solo haga una cosa.
+    //Aplicamos el principio de responsabilidad unica, para que cada clase solo tenga una responsabilidad.
 
     public static class calculadoraSuma{
 

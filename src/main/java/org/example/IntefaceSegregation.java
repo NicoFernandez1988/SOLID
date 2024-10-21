@@ -2,6 +2,13 @@ package org.example;
 
 public class IntefaceSegregation {
 
+    /**
+     Este principio indica los clientes no deberían verse obligados a depender de interfaces que no usan.
+     De esta forma, en lugar de crear interfaces grandes que contengan métodos que no todos los clientes
+     necesitan, se deben dividir en interfaces más específicas, enfocadas en conjuntos de funcionalidades concretas.
+     Así, cada cliente solo dependerá de los métodos que realmente necesita.
+     */
+
     public interface Animal{
 
         static void ladrar(){
@@ -13,8 +20,11 @@ public class IntefaceSegregation {
         }
     }
 
-    //Como el perro no puede maullar, no deberia implementar la interfaz si no va a utilizar el metodo maullar.
-    //De esta forma viola el principio de segregacion de intefaz.
+    /**
+     Como el perro no puede maullar, no deberia implementar la interfaz si no va a utilizar el metodo maullar.
+     De esta forma viola el principio de segregacion de intefaz.
+     */
+
 
     public class Perro implements Animal {
 
@@ -41,8 +51,11 @@ public class IntefaceSegregation {
         }
     }
 
-    //La forma correcta de hacerlo es crear 2 interfaces que una tenga el metodo ladrar y la otra maullar.
-    //En donde cada animal solo implemente la intefaz correspondiente para los metodos que necesita.
+    /**
+     La forma correcta de hacerlo es crear 2 interfaces que una tenga el metodo ladrar y la otra maullar.
+     En donde cada animal solo implemente la intefaz correspondiente para los metodos que necesita.
+     */
+
 
     public interface AnimalLadrador{
 

@@ -2,6 +2,11 @@ package org.example;
 
 public class LiskovSustitution {
 
+    /**
+      Este principio indica que las clases hijas o subclases deben poder comportarse de la misma forma que las
+      clases padre.
+     */
+
     public abstract static class  Vehiculo {
 
         public abstract void conducir();
@@ -27,8 +32,6 @@ public class LiskovSustitution {
     /**
      * Avion es una subclase de vehiculo, pero no deberia serlo ya que no se puede conducir, se puede volar.
      * De esta forma no cumple con el principio de sustitucion de Liskov.
-     * El principio indica que las clases hijas o subclases deben poder comportarse de la misma forma que las
-     * clases padre.
      * En este caso, la solucion seria crear otra clase abstracta padre llamada "VehiculoAire", que tenga un metodo
      * para los vehiculos que vuelan. Para que la subclase Avion extienda de VehiculoAire.
      */
