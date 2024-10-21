@@ -4,7 +4,8 @@ public class DependencyInversion {
 
     /**
      Este principio Indica que los modulos de alto nivel no deben depender de los modulos de bajo nivel, sino que
-     ambos deben depender de abstracciones.
+     ambos deben depender de abstracciones. Además, las abstracciones no deberían depender de los detalles, sino que
+     los detalles deberían depender de las abstracciones.
      */
 
 
